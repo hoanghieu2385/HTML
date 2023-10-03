@@ -1,0 +1,41 @@
+body {
+    background-color: burlywood;
+    margin: 0;
+    padding: 0;
+
+}
+h1 {
+    text-align: center;
+    color: rgb(176, 7, 7);
+}
+h2 {
+    color: darkblue;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border: 5px solid #486738;
+}
+p {
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid #8c2f2f;
+    border-radius: 5px;
+}
+ul,ol {
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid #300a0a;
+    border-radius: 5px;
+}
+li {
+    margin: 5px;
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    color: rgb(87, 31, 137);
+    font-size: 20px;
+}
