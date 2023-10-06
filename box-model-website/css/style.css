@@ -1,47 +1,77 @@
 body {
     font-size: 80%;
+    /* cỡ chữ */
     font-family: "Courier New", Courier, monospace;
+    /* kiểu chữ */
     letter-spacing: 0.15em;
+    /* khoảng cách kí tự */
     background-color: #efefef;
+    /* màu nên */
 }    
 #page {
     max-width: 940px;
+    /* độ rộng tối đa cho trang. Chống bị vỡ layout */
     min-width: 720px;
+    /* độ rộng tối thiểu cho */
     margin: 10px auto 10px auto;
+    /* khoảng cách từ viền tới các phần tử xung quanh */
     padding: 20px;
+    /* khoảng cách viền tới nội dung */
     border: 4px double #000;
+    /* viền, khung */
     background-color: #ffffff;
+    /* màu nền */
 }
 #logo {
     width: 150px;
+    /* chiều cao phông */
     margin: 10px auto 25px auto;
+    /* khoảng cách từ viền tới các phần tử xung quanh */
 }
 ul {
     width: 570px;
+    /* chiều cao  */
     padding: 15px;
+    /* khoảng cách viền tới nội dung */
     margin: 0px auto 0px auto;
+    /* khoảng cách viền tới các phần tử xung quanh */
     border-top: 2px solid #000;
+    /* viền phía trên */
     border-bottom: 1px solid #000;
+    /* viền dưới */
     text-align: center;
+    /* hiển thị ký tự ở giữa */
 }
 li{
     display: inline;
+    /* hiển thị cùng 1 dòng */
     margin: Opx 3px;
+    /* khoảng cách từ viền tới các phần tử xung quanh */
 }
 p{
     text-align: center;
+    /* căn chỉnh kiểu chữ ở giữa */
     width: 600px;
+    /* chiều rộng */
     margin: 20px auto 20px auto;
+    /* khoảng cách viền tới phần tử xung quanh */
     font-weight: normal;
 }
 a{
     color: #000000;
+    /* màu */
     text-transform: uppercase;
+    /* kiểu chữ viết hoa tất cả */
     text-decoration: none;
+    /* xóa gạch chân */
     padding: 6px 18px 5px 18px;
+    /* khoảng cách tử viền tới nội dung */
 }
 a:hover,
-a.on {
+/* đổi màu khi di chuyển chuột tới nội dung */
+a.on { 
     color: #cc3333;
+    /* màu */
     background-color: #ffffff;
+    /* màu nền */
 }
