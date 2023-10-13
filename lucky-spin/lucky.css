@@ -24,7 +24,7 @@ body{
     content: '';
     width: 32px;
     height: 32px;
-    background: url('../LuckySpin/images/arrow-left.png') no-repeat;
+    background: url('images/arrow-left.png') no-repeat;
     background-size: 32px;
     right: -30px;
     top: 50%;
