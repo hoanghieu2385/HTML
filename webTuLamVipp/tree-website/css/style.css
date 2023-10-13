@@ -27,35 +27,35 @@ ul li a{
 ul li a:hover{
     background-color: rgb(255, 0, 0);
 }
-.magic-of-trees{
+section.magic-of-trees{
     padding: 30px;
     text-align: center;
     background-color: rgb(104, 192, 243);
     height: 140px;
     line-height: 60px;
 }
-.magic-of-trees h2 {
+section.magic-of-trees h2 {
     color: white;
     margin: 0;
 }
-.magic-of-trees a {
+section.magic-of-trees a {
     text-decoration: none;
     border: 1px ;
     padding: 5px;
     background-color: rgb(232, 111, 111);
     color: white;
 }
-.magic-of-trees a:hover{
+section.magic-of-trees a:hover{
     background-color: rgb(255, 0, 0);
 }
-.about-trees{
+section.about-trees{
     border: 0px solid;
     background-color: rgb(222, 221, 221);
     height: 200px;
     line-height: 60px;
     text-align: center;
 }
-.about-trees h3 {
+section.about-trees h3 {
     margin: 0;
 }
 section.tree-gallery{
