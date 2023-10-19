@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tính tổng giá trị đơn hàng</title>
+    <script type="text/javascript">
+        function calculateTotal() {
+            var price = 30000;
+            var quantity = document.getElementById("quantity").value;
+            var total = price * quantity;
+            total *= 0.95;
+            document.getElementById("total").innerHTML = total;
+        }
+    </script>
+</head>
+<body>
+    <h1>Tính tổng giá trị đơn hàng</h1>
+    <p>Nhập số lượng sản phẩm:</p>
+    <input type="number" id="quantity" name="quantity" value="1" onchange="calculateTotal()">
+    <p>Tổng giá trị đơn hàng: <span id="total">30000</span> đồng</p>
+</body>
+</html>
