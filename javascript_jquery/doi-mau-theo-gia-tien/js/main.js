@@ -12,23 +12,19 @@ oclock();
 // gọi hàm oclock ra để hiển thị time khi load trang
 
 function changeColor() {
-    var date = new Date();
-    // lấy time hiện tại
-    var seconds = date.getSeconds();
-    // lấy giây hiện tại
-    if (seconds === 0) {
-        // nếu giây = 0 thì thay đổi màu nền có nghĩa là sẽ thay đổi màu nền sau mỗi phút
-        var colors = ["bisque", "thistle"];
-        // tạo mảng chứa các màu
-        var color = colors[Math.floor(Math.random() * colors.length)];
-        // lấy ngẫu nhiên 1 màu trong mảng
-        document.body.style.backgroundColor = color;
-        // thay đổi màu nền
+    const textElement = document.getElementById('text');
+    // lấy ra màu sắc hiện tại của phần tử
+    const currentColor = textElement.style.color;
+    
+    if (currentColor === 'blue') {
+        textElement.style.color = 'red';
+    } else {
+        textElement.style.color = 'blue';
     }
 }
 
-setInterval(changeColor, 1000);
-// gọi hàm changeColor ra sau mỗi 1000ms = 1s
+// Gọi hàm thay đổi màu mỗi giây
+setInterval(changeColor, 60000);
 
 
 function calculateTotal() {
@@ -43,6 +39,7 @@ function calculateTotal() {
         // giảm giá 5% nếu tổng tiền >= 100000
     } else{
         total = total;
+        // giữ nguyên giá nếu tổng tiền < 100000
     }
     document.getElementById("total").innerHTML = total;
     // hiển thị tổng tiền
