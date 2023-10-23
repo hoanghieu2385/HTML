@@ -22,4 +22,4 @@ for( i = 0; i < listItem.length; i++ ) {
 // đếm số lượng phần tử li và thêm vào header
 let count = document.getElementsByTagName('li').length;
 let header = document.getElementsByTagName('h1')[0];
-header.innerHTML += '<span>'+`${count}`+ '</span>';
+header.innerHTML += '<span>' +`${count}`+ '</span>';
