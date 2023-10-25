@@ -1,9 +1,9 @@
 var elForm, elSelectPackage, elPackageHint, elTerms, elTermsHint;
-elForm = document.getElementById('formSignup');
+elForm          = document.getElementById('formSignup');
 elSelectPackage = document.getElementById('package');
-elPackageHint = document.getElementById('packageHint');
-elTerms = document.getElementById('terms');
-elTermsHint = document.getElementById('termsHint');
+elPackageHint   = document.getElementById('packageHint');
+elTerms         = document.getElementById('terms');
+elTermsHint     = document.getElementById('termsHint');
 
 function packageHint() {
     var pack = this.options[this.selectedIndex].value;
@@ -16,6 +16,7 @@ function packageHint() {
 function checkTerms(event) {
     if (!elTerms.checked){
         elTermsHint.innerHTML = 'You must agree to the terms.';
+        event.preventDefault();
     }
 }
 
